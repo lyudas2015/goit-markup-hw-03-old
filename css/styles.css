@@ -1,3 +1,12 @@
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
 :root {
 /* fonts */
 --main-font: "Roboto";
@@ -23,6 +32,7 @@ body {
     font-family: var(--main-font), sans-serif;
     font-size: 14px;
 }
+
 
 /* common styles start */
 .link {
@@ -224,7 +234,9 @@ button {
 
 .about-list {
     display: flex;
-    } 
+    justify-content: space-between;
+} 
+
 .about-item:not(:last-child)  {
     margin-right: 30px;
 } 
@@ -244,6 +256,7 @@ button {
  }
  .team-list {
     display: flex;
+    justify-content: space-between;
  }
 
 .team-card:not(:first-child)  {
@@ -342,6 +355,7 @@ button {
 }
 .image-portfolio {
     flex-basis: calc((100% - 30px * 3) / 3);
+    justify-content: space-between;
     margin: 15px;
 }
 .image-picture {
