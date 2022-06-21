@@ -224,7 +224,7 @@ button {
 
 .about-list {
     display: flex;
-} 
+    } 
 .about-item:not(:last-child)  {
     margin-right: 30px;
 } 
@@ -370,8 +370,11 @@ button {
     border-bottom: 1px solid #EEEEEE;
     
 }
+/* Футер */
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--black-bg-cl);
 }
 
@@ -383,9 +386,6 @@ button {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--blue-txt-cl);
-    margin-top: 60px;
-    margin-bottom: 20px;
-
 }
 
 .footer-logo-accent {
@@ -397,6 +397,9 @@ address {
     font-style: normal;
 }
 
+.address {
+    padding-left: 0px;
+}
 .footer-link:hover,
 .footer-link:focus  {
     color: var(--white-tht-cl);
