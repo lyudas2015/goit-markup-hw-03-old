@@ -52,7 +52,6 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
-    outline: 1.5px solid violet;
 }
 .header {
     display: flex;
