@@ -46,19 +46,28 @@ body {
 
 .section {
     padding-top: 94px;
-    padding-bottom: 94px;
-    
+    padding-right: 15px;
+    padding-left: 15px;
 }
+
 .container {
     width: 1200px;
     margin: 0 auto;
+  
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .header {
     display: flex;
 }
+
 .header-nav {
     display: flex;
     align-items: center;
+    
 }
 .header-list {
     display: flex;
@@ -79,7 +88,7 @@ body {
 .header-list-cont {
     display: flex;
     align-items: center;
-    margin: auto;
+    margin-left: auto;
 }
 .header-list-cont .header-list-contacts {
     display: block;
@@ -147,6 +156,11 @@ body {
 } 
 
 /* Section hero */
+.hero-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .hero-title {
     max-width: 696px;
     margin: 0 auto;
@@ -198,10 +212,6 @@ button {
 
 /* Section benefits */
 
-.benefits {
-    background-color: var(--benefits-bg-cl);
-}
-
 .benefits-list {
     display: flex;
     gap: 30px;
@@ -209,6 +219,9 @@ button {
     padding-right: 0px;
 } 
 
+.benefits-check {
+    width: 270px;
+}
 .benefits-title {
     font-weight: 700;
     font-size: 14px;
@@ -250,8 +263,9 @@ button {
     margin-bottom: 50px;  
 }
  /* Section team */
- .team {
-   background-color: var(--team-bg-cl)
+.team-section {
+   background-color: var(--team-bg-cl);
+   padding-bottom: 94px;
  }
  .team-list {
     display: flex;
@@ -262,7 +276,6 @@ button {
     margin-left: 30px;
 }
 .team-names {
-    margin-top: 50px;
     margin-bottom: 10px;
 }
 .team-title {
@@ -285,6 +298,10 @@ button {
     color: var(--accent-txt-cl)
 }
 
+.team-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .team-profession {
     font-weight: 400;
     font-size: 16px;
@@ -293,20 +310,15 @@ button {
     text-align: center;
     color: var(--black-txt-cl)
 }
-/* Секція main портфоліо */
-
-.portfolio {
-    background-color: #E5E5E5;
-}
 
 /* Секція кнопок портфоліо */
 
 .button-list {
     display: flex;
-    gap: 30px;
+    gap: 8px;
     margin: 0 auto;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .button-special:hover,
@@ -322,6 +334,10 @@ button {
     border: none;
     background-color: var(--blue-txt-cl);
     color: var(--white-tht-cl);
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
 }
 
 .button-name:hover,
@@ -339,28 +355,31 @@ button {
     cursor: pointer;
     border: none;
     background-color: #F5F4FA;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
 }
 
 /* Секція зображень */
 
+.section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 .image-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: -15px;
-    padding-left: 0px;
-    padding-right: 0px;
-    
+    align-items: center;
 }
+
 .image-portfolio {
     flex-basis: calc((100% - 30px * 3) / 3);
-    justify-content: space-between;
-    margin: 15px;
+    margin: 15px; 
 }
-.image-picture {
-    flex-basis: 370px;
-    gap: 30px;
-}
+
 .image-title {
     margin-top: 20px;
     margin-bottom: 4px;
@@ -373,6 +392,13 @@ button {
     letter-spacing: 0.06em;
     color: #212121;
 }
+.image-text {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border: 1px solid #EEEEEE;
+}
 
 .image-description {
     font-weight: 400;
@@ -380,17 +406,15 @@ button {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: #757575;
-    border-bottom: 1px solid #EEEEEE;
+    
     
 }
 /* Футер */
 
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
     background-color: var(--black-bg-cl);
 }
-
+    
 .footer-logo.link {
     font-family: 'Raleway';
     font-style: normal;
@@ -400,7 +424,10 @@ button {
     letter-spacing: 0.03em;
     color: var(--blue-txt-cl);
 }
-
+.footer-text {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .footer-logo-accent {
     color: var(--white-tht-cl);
     text-decoration: none;
@@ -411,8 +438,9 @@ address {
 }
 
 .address {
-    padding-left: 0px;
-}
+    margin-top: 20px;
+}   
+
 .footer-link:hover,
 .footer-link:focus  {
     color: var(--white-tht-cl);
@@ -428,7 +456,7 @@ address {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
-.footer-link:not(:last-child) {
+.footer-cont:not(:last-child) {
     margin-bottom: 9px;
 }
 
