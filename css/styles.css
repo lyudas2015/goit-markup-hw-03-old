@@ -33,7 +33,6 @@ body {
     font-size: 14px;
 }
 
-
 /* common styles start */
 .link {
     text-decoration: none;
@@ -43,18 +42,17 @@ body {
     list-style: none;
 }
 /* common styles end */
-
-.section {
-    padding-top: 94px;
-    padding-right: 15px;
-    padding-left: 15px;
+.header {
+    display: flex;
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
-  
+    padding-right: 15px;
+    padding-left: 15px;
 }
+
 img {
     display: block;
     max-width: 100%;
@@ -66,9 +64,9 @@ img {
 
 .header-nav {
     display: flex;
-    align-items: center;
-    
+    align-items: center;  
 }
+
 .header-list {
     display: flex;
     margin-left: 93px;
@@ -81,7 +79,6 @@ img {
     margin-right: 50px;
 }
 .header-list .header-link {
-    
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -101,7 +98,7 @@ img {
     margin-right: 50px;
 }
 
-/* Header sestion */
+/* Header section */
 
 .header-link:hover,
 .header-link:focus {
@@ -156,6 +153,10 @@ img {
 } 
 
 /* Section hero */
+
+.hero {
+    background-color: var(--black-bg-cl)
+}
 .hero-container {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -166,9 +167,7 @@ img {
     margin: 0 auto;
     margin-bottom: 30px;
 }
-.hero {
-    background-color: var(--black-bg-cl)
-}
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -212,15 +211,21 @@ button {
 
 /* Section benefits */
 
+.benefits-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .benefits-list {
     display: flex;
-    gap: 30px;
     padding-left: 0px;
     padding-right: 0px;
 } 
 
 .benefits-check {
     width: 270px;
+}
+.benefits-check:not(:last-child) {
+    margin-right: 30px;
 }
 .benefits-title {
     font-weight: 700;
@@ -241,12 +246,11 @@ button {
 
 /* Section about */
 .about-section {
-    background-color: var(--benefits-bg-cl);
+    padding-bottom: 94px;
 }
 
 .about-list {
     display: flex;
-    justify-content: space-between;
 } 
 
 .about-item:not(:last-child)  {
@@ -264,12 +268,12 @@ button {
 }
  /* Section team */
 .team-section {
-   background-color: var(--team-bg-cl);
-   padding-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--team-bg-cl); 
  }
  .team-list {
     display: flex;
-    justify-content: space-between;
  }
 
 .team-card:not(:first-child)  {
@@ -303,12 +307,17 @@ button {
     padding-bottom: 30px;
 }
 .team-profession {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--black-txt-cl)
+}
+
+/* Портфоліо */
+.header-portfolio {
+    display: flex;
+    border-bottom: 1px solid #ECECEC;
 }
 
 /* Секція кнопок портфоліо */
@@ -364,15 +373,15 @@ button {
 /* Секція зображень */
 
 .section-portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-top: 97px;
+    padding-bottom: 91px;
 }
+
 .image-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: -15px;
 }
 
 .image-portfolio {
@@ -381,7 +390,6 @@ button {
 }
 
 .image-title {
-    margin-top: 20px;
     margin-bottom: 4px;
 }
 
@@ -413,6 +421,8 @@ button {
 
 .footer {
     background-color: var(--black-bg-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
     
 .footer-logo.link {
@@ -424,10 +434,7 @@ button {
     letter-spacing: 0.03em;
     color: var(--blue-txt-cl);
 }
-.footer-text {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+
 .footer-logo-accent {
     color: var(--white-tht-cl);
     text-decoration: none;
